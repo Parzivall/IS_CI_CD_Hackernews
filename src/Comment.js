@@ -22,7 +22,7 @@ var Comment = React.createClass({
     threadStore: React.PropTypes.instanceOf(CommentThreadStore).isRequired
   },
   
-  var Comment=react este a linea
+  var Comment=react
 
   getDefaultProps() {
     return {
