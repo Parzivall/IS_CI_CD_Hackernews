@@ -8,9 +8,6 @@ var Spinner = require('./Spinner').default
 
 var setTitle = require('./utils/setTitle').default
 
-// TODO User submissions
-
-// TODO User comments
 
 var UserProfile = React.createClass({
   mixins: [ReactFireMixin],

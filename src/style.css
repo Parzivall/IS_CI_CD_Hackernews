@@ -22,8 +22,7 @@ span.control:hover {
 }
 
 /* From https://github.com/tobiasahlin/SpinKit */
-.Spinner {
-}
+.Spinner { }
 .Spinner > div {
   background-color: #666;
   border-radius: 100%;
