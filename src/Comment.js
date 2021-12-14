@@ -22,8 +22,6 @@ var Comment = React.createClass({
     threadStore: React.PropTypes.instanceOf(CommentThreadStore).isRequired
   },
   
-  var Comment=react
-
   getDefaultProps() {
     return {
       loadingSpinner: false
