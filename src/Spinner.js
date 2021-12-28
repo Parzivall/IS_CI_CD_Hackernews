@@ -1,6 +1,6 @@
-var React = require('react');
+var React = require('react')
 
-// todo Implement GIF-based fallback for IE9 and another non-animating browsers
+
 //      See https://github.com/tobiasahlin/SpinKit for how-to
 var Spinner = React.createClass({
   getDefaultProps() {
