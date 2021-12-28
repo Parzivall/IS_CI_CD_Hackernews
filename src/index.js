@@ -3,7 +3,7 @@ import {hashHistory} from 'react-router'
 require('./style.css')
 
 require('setimmediate')
-
+//comentario
 var React = require('react')
 var {render} = require('react-dom')
 var Router = require('react-router/lib/Router')
