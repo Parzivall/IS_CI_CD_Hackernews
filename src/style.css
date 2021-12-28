@@ -324,7 +324,7 @@ span.control:hover {
   }
 
   /* Safari only fix to ensure Settings menu is full width */
-  _::-webkit-:not(:root:root), .Settings {
+_::-webkit-:not(:root:root), .Settings {
     width: 100%;
   }
 }
