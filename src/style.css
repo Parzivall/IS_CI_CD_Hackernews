@@ -281,8 +281,7 @@ span.control:hover {
 .Comment--level13 .Comment__content, .Comment--level13.Comment--loading { padding-left: 33.75em; }
 .Comment--level14 .Comment__content, .Comment--level14.Comment--loading { padding-left: 36.25em; }
 .Comment--level15 .Comment__content, .Comment--level15.Comment--loading { padding-left: 38.75em; }
-.Comment__kids {
-}
+
 .Comment__collapse {
   cursor: pointer;
 }
