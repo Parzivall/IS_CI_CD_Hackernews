@@ -282,7 +282,7 @@ StoryCommentThreadStore.prototype = extend(Object.create(CommentThreadStore.prot
     if (!SettingsStore.showDead) {
       sortedCommentIds = sortedCommentIds.filter(id => !this.deadComments[id])
     }
-    sortedCommentIds.sort(function(a, b){return a-b})
+    sortedCommentIds.sort((a, b)=> (a-b))
     var commentId = sortedCommentIds[timeIndex - 1]
     return this.comments[commentId]
   },
