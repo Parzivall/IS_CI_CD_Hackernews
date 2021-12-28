@@ -1,6 +1,7 @@
 function extend(dest, src1, src2) {
   var props = Object.keys(src1)
   var i;
+  let l;
   for (i = 0, l = props.length; i < l; i++) {
     dest[props[i]] = src1[props[i]]
   }
