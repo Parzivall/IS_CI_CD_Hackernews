@@ -11,6 +11,7 @@ var cx = require('./utils/buildClassName').default
 
 /**
  * A comment in a thread.
+ posible conflicto
  */
 var Comment = React.createClass({
   mixins: [CommentMixin, ReactFireMixin],
@@ -21,7 +22,7 @@ var Comment = React.createClass({
     loadingSpinner: React.PropTypes.bool,
     threadStore: React.PropTypes.instanceOf(CommentThreadStore).isRequired
   },
-  
+
   getDefaultProps() {
     return {
       loadingSpinner: false
