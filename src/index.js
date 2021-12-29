@@ -1,22 +1,8 @@
-import {hashHistory} from 'react-router'
+import React from 'react';
+import { render } from 'react-dom';
+import { App } from './App';
+import * as serviceWorker from './serviceWorker';
 
-require('./style.css')
+render(<App />, document.getElementById('root'));
 
-require('setimmediate')
-//comentario
-var React = require('react')
-var {render} = require('react-dom')
-var Router = require('react-router/lib/Router')
-var useScroll = require('react-router-scroll/lib/useScroll')
-var applyRouterMiddleware = require('react-router/lib/applyRouterMiddleware')
-
-var routes = require('./routes').default
-
-render(
-  <Router
-    history={hashHistory}
-    render={applyRouterMiddleware(useScroll())}
-    routes={routes}
-  />,
-  document.getElementById('app')
-)
+serviceWorker.register();
