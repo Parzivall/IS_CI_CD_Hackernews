@@ -27,6 +27,9 @@ var App = React.createClass({
   },
 
   /**
+  cambiando rama1
+  cambiando rama1
+  cambiando rama3...
    * Give stores a chance to persist data to sessionStorage in case this is a
    * refresh or an external link in the same tab.
    */
