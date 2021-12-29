@@ -12,51 +12,56 @@ Falsos Positivos
 
 # [react-hn](https://insin.github.io/react-hn)
 
-A [React](http://facebook.github.io/react) &
-[react-router](https://github.com/rackt/react-router)-powered implementation of
-[Hacker News](https://news.ycombinator.com) using its
-[Firebase API](https://github.com/HackerNews/API).
+Una aplicacion de  [React](http://facebook.github.io/react) &
+[react-testing-library](https://github.com/testing-library/react-testing-library)-dobre
+[Hacker News](https://news.ycombinator.com)
 
-[![react-hn screenshot](https://github.com/insin/react-hn/raw/master/screenshot.png "New comment highlighting in react-hn")](https://insin.github.io/react-hn)
 
-Live version: https://insin.github.io/react-hn
+
+ Esta aplicación es un lector de noticias que toma la Api de Hackernews
 
 ## Features
 
-* Supports display of all item types:
-  [stories](https://insin.github.io/react-hn/#/story/8863),
-  [jobs](https://insin.github.io/react-hn/#/job/8426937),
-  [polls](https://insin.github.io/react-hn/#/poll/126809) and
-  [comments](https://insin.github.io/react-hn/#/comment/8054455)
-* Basic [user profiles](https://insin.github.io/react-hn/#/user/patio11)
-* Collapsible comment threads, with child counts
-* "Realtime" updates (free via Firebase!)
-* Last visit details for stories are cached in `localStorage`
-* New comments are highlighted:
-  * Comments since your last visit to an item
-  * New comments which load while you're reading an item
-  * New comments in collapsed threads
-* Automatic or manual collapsing of comment threads which don't contain any new
-  comments
-* Manual highlighting of the X most recent comments to catch up on threads you were reading elsewhere
-* Stories with new comments are marked on list pages
-* Stories can be marked as read to remove highighting from new comments
-* "comments" sections driven by the Changed Items API
-* Story listing pages are cached in `sessionStorage` for quick back button usage
-  and pagination in the same session
-* Configurable settings:
-  * auto collapse - automatically collapse comment threads without new comments
-    on page load
-  * show reply links - show "reply" links to Hacker News
-  * show dead - show items flagged as dead
-  * show deleted - show comments flagged as deleted in threads
-* Delayed comment detection - so tense! Who will it be? What will they say?
+* Uso React + DOM (create-react-app como base)
+  * Custom Hooks
+  * Styled Components
+  * Axios+ Memo
+  * React Testing Library
 
-[Feature requests are welcome!](https://github.com/insin/react-hn/issues/new)
+* Admite la visualización de todos las noticias
 
-## Building
 
-Install dependencies:
+
+* Los detalles de la última visita se almacena en caché
+* Se destacan las nuevas noticias:
+
+
+* Resaltado  de los X noticas más recientes para ponerse al día con los hilos que estaba leyendo en otro lugar
+
+* Las noticias se marcan como leidas
+* Secciones  modificados por los elementos de API  
+
+
+
+
+## Preconfiguracion
+
+Es posible crear manualmente una aplicación React, pero Facebook ha creado un paquete Node create-react-app para generar una versión estándar de una aplicación React,facil y rapida como nos encanta  con una estructura de proyecto ya echa .
+
+
+## Build Setup
+Donde my-app es el nomrbe del proyecto
+```
+  install node js
+  npx create-react-app my-app
+  cd my-app
+
+```
+### npm scripts
+
+Instalar Dependencias:
+
+
 
 ```
 npm install
@@ -64,9 +69,10 @@ npm install
 
 ### npm scripts
 
-* `npm start` - start development server
-* `npm run build` - build into the `dist/` directory
-* `npm run lint` - lint `src/`
-* `npm run lint:fix` - lint `src/` and auto-fix issues where possible
+
+* `npm audit fix ` - y solucionar problemas automáticamente siempre que sea posible
+* `npm start` - iniciar servidor de desarrollo
+
+
 
 ## MIT Licensed
