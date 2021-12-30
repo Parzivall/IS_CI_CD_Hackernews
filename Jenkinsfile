@@ -7,8 +7,22 @@ pipeline {
     {
         stage("Install Project Dependencies"){
             steps{
-                sh 'yarn install'
+                sh 'npm install'
             }            
+        }
+
+        stage('SonarQube Analysis') {
+        enviroment{
+            def SCANNER = tool name: 'sonarqube', type: 'hudson.plugins.sonar.SonarRunnerInstallation';
+        }
+
+        steps {
+            withSonarQubeEnv(installationName: 'sonarqube') {
+                sh "${SCANNER}/bin/sonar-scanner"
+            }
         }
     }
 }
+
+
+
