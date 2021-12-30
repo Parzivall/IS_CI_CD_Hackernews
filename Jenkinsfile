@@ -1,13 +1,13 @@
 pipeline {
     agent any
-    enviroment {
+    environment {
         CI = 'true'
     }
     stages 
     {
         stage("Install Project Dependencies"){
             steps{
-                sh "npm install"
+                sh 'npm install'
             }            
         }
     }
