@@ -22,5 +22,6 @@ test('renders the story component with content', async () => {
     expect(getByTestId('story')).toBeTruthy(),
     expect(getByText('Tarnished: Google Responds')).toBeTruthy(),
     expect(getByTestId('story-by').textContent).toEqual('By: Karl Hadwen'),
+    expect(getByText('story-time').textContent).toEqual('1567209822'),
   ]);
 });
