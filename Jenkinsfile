@@ -9,7 +9,7 @@ pipeline {
     
         stage('SonarQube Analysis') 
         {
-            def SCANNER = tool 'sonarqube', type: 'hudson.plugins.sonar.SonarRunnerInstallation';
+            def SCANNER = tool 'sonarqube';
 
             steps 
             {
