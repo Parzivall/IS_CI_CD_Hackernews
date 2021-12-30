@@ -1,11 +1,11 @@
-// This optional code is used to register a service worker.
-// register() is not called by default.
+// Este código opcional se usa para registrar un trabajador de servicio.
+// register () no se llama por defecto.
 
-// This lets the app load faster on subsequent visits in production, and gives
-// it offline capabilities. However, it also means that developers (and users)
-// will only see deployed updates on subsequent visits to a page, after all the
-// existing tabs open on the page have been closed, since previously cached
-// resources are updated in the background.
+// Esto permite que la aplicación se cargue más rápido en visitas posteriores en producción y brinda
+// sus capacidades fuera de línea. Sin embargo, también significa que los desarrolladores (y usuarios)
+// solo verá actualizaciones implementadas en visitas posteriores a una página, después de todas las
+// las pestañas existentes abiertas en la página se han cerrado, ya que se almacenaron en caché anteriormente
+// los recursos se actualizan en segundo plano.
 
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
@@ -66,22 +66,22 @@ function registerValidSW(swUrl, config) {
         installingWorker.onstatechange = () => {
           if (installingWorker.state === 'installed') {
             if (navigator.serviceWorker.controller) {
-              // At this point, the updated precached content has been fetched,
-              // but the previous service worker will still serve the older
-              // content until all client tabs are closed.
+              // En este punto, se ha obtenido el contenido almacenado en caché actualizado,
+              // pero el trabajador de servicio anterior seguirá sirviendo al viejo
+              // contenido hasta que se cierren todas las pestañas del cliente.
               console.log(
                 'New content is available and will be used when all ' +
                   'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
               );
 
-              // Execute callback
+              // Ejecutar devolución de llamada(callback)
               if (config && config.onUpdate) {
                 config.onUpdate(registration);
               }
             } else {
-              // At this point, everything has been precached.
-              // It's the perfect time to display a
-              // "Content is cached for offline use." message.
+              // En este punto, todo se ha guardado en caché.
+              // Es el momento perfecto para mostrar un mensaje
+              // "El contenido se almacena en caché para su uso sin conexión."
               console.log('Content is cached for offline use.');
 
               // Execute callback
