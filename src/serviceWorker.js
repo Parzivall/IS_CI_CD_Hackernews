@@ -79,7 +79,7 @@ function registerValidSW(swUrl, config) {
                 config.onUpdate(registration);
               }
             } else {
-              // En este punto, todo se ha guardado en caché.
+              // En este punto,  se ha guardado en caché.
               // Es el momento perfecto para mostrar un mensaje
               // "El contenido se almacena en caché para su uso sin conexión."
               console.log('Content is cached for offline use.');
