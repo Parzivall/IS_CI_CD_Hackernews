@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    enviroment {
+        CI = 'true'
+    }
     stages 
     {
         stage("Install Project Dependencies"){
