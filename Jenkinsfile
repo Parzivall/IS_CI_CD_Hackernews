@@ -1,23 +1,14 @@
 pipeline {
     agent any
+    environment {
+        CI = 'true'
+    }
     stages 
     {
-        stage("Install Project Dependencies") 
-        {
-            sh "npm install"
-        }
-    
-        stage('SonarQube Analysis') 
-        {
-            def SCANNER = tool 'sonarqube';
-
-            steps 
-            {
-                withSonarQubeEnv(installationName: 'sonarqube') 
-                {
-                    sh "${SCANNER}/bin/sonar-scanner"
-                }
-            }
+        stage("Install Project Dependencies"){
+            steps{
+                sh 'npm install'
+            }            
         }
     }
 }
