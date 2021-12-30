@@ -14,11 +14,11 @@ pipeline {
 
         stage('SonarQube Analysis') {
             enviroment{
-                def SCANNER = tool name: 'SonarQubeScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation';
+                def SCANNER = tool 'sonarqube', type: 'hudson.plugins.sonar.SonarRunnerInstallation';
             }
 
             steps {
-                 withSonarQubeEnv(installationName: 'sql') {
+                 withSonarQubeEnv(installationName: 'sonarqube') {
                     sh "${SCANNER}/bin/sonar-scanner"
                 }
             }
